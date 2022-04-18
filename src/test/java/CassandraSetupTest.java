@@ -28,6 +28,9 @@ public class CassandraSetupTest {
     public void testCreateKeySpace() {
         //Delete any present keyspace
         session.execute("DROP KEYSPACE IF EXISTS employee_keyspace");
+        session.execute("DROP KEYSPACE IF EXISTS employee_keyspace");
+        session.execute("DROP KEYSPACE IF EXISTS employee_keyspace"); session.execute("DROP KEYSPACE IF EXISTS employee_keyspace"); session.execute("DROP KEYSPACE IF EXISTS employee_keyspace");
+
 
         //Creating a keyspace
         session.execute(ExampleUtils.createKeyspaceSimpleStrategy(KEYSPACE_NAME, 2));
